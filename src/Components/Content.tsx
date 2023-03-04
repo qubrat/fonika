@@ -35,7 +35,7 @@ function Hero() {
 						</span>
 						<span>e-mail: </span>
 					</span>
-					<span>fonika.biz@gmail.com</span>
+					<span>tonika.biz@gmail.com</span>
 				</h3>
 			</div>
 		</div>
