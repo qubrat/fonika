@@ -1,15 +1,15 @@
-import { useState } from 'preact/hooks';
 import Content from './Components/Content';
-import Hero from './Components/Hero';
+import Logo from './Components/Logo';
 import './app.css';
 
 export function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<>
-			<Hero />
+			<Logo />
 			<Content />
+			<footer>
+				Created by <a href="https://aproco.io/">aproco.io</a>
+			</footer>
 		</>
 	);
 }
