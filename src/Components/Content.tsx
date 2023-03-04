@@ -9,8 +9,9 @@ function Hero() {
 			<div class="hero--contact">
 				<h3 class="hero--subtext">
 					<span>
-						<span class="hero--accent hero--id">
-							<i class="fa-solid fa-building hero--accent-icon"></i>
+						<span class="hero--accent hero--id fa-stack fa-1x">
+							<i class="fa-solid fa-circle fa-stack-2x hero--accent-icon-bg"></i>
+							<i class="fa-solid fa-building fa-stack-1x hero--accent-icon"></i>
 						</span>
 						<span>NIP: </span>
 					</span>
@@ -18,8 +19,9 @@ function Hero() {
 				</h3>
 				<h3 class="hero--subtext">
 					<span>
-						<span class="hero--accent hero--id">
-							<i class="fa-solid fa-phone hero--accent-icon"></i>
+						<span class="hero--accent hero--id fa-stack fa-1x">
+							<i class="fa-solid fa-circle fa-stack-2x hero--accent-icon-bg"></i>
+							<i class="fa-solid fa-phone fa-stack-1x hero--accent-icon"></i>
 						</span>
 						<span>Telefon: </span>
 					</span>
@@ -27,8 +29,9 @@ function Hero() {
 				</h3>
 				<h3 class="hero--subtext">
 					<span class="hero--first-part">
-						<span class="hero--accent hero--id">
-							<i class="fa-solid fa-envelope hero--accent-icon"></i>
+						<span class="hero--accent hero--id fa-stack fa-1x">
+							<i class="fa-solid fa-circle fa-stack-2x hero--accent-icon-bg"></i>
+							<i class="fa-solid fa-envelope fa-stack-1x hero--accent-icon"></i>
 						</span>
 						<span>e-mail: </span>
 					</span>

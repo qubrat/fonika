@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: hsl(60, 3%, 95%);
+  color: var(--dark);
+  background-color: var(--dark);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -18,6 +18,8 @@
   --primary: hsl(60, 3%, 95%);
   --primaryHover: hsl(60, 3%, 94%);
   --secondary: hsl(40, 18%, 90%);
+  --secondaryHover: hsl(40, 18%, 87%);
+  --secondaryDark: hsl(40, 18%, 70%);
   --accent: hsl(81, 40%, 50%);
   /* --accent: hsl(27, 70%, 65%); */
   --dark: hsl(100, 2%, 25%);
@@ -32,6 +34,7 @@ body {
 
 #logo {
   margin: 5rem auto;
+  color: var(--primary)
 }
 
 .logo--name {
@@ -55,18 +58,18 @@ body {
 }
 
 #content {
-  background-color: var(--secondary);
+  background-color: var(--secondaryDark);
   padding: 3rem 4rem;
   border-radius: 1rem;
   gap: 2rem;
-  box-shadow: 15px 15px 30px hsl(100, 2%, 80%);
+
   display: flex;
   flex-direction: column;
   /* box-shadow: 15px 20px 40px hsl(81, 15%, 80%); */
 }
 
 .bullet {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   padding: 2rem;
   border-radius: 0.5rem;
   display: flex;
@@ -76,8 +79,8 @@ body {
 }
 
 .bullet:hover {
-  background-color: var(--primaryHover);
-  box-shadow: 10px 15px 20px hsl(81, 10%, 80%);
+  background-color: var(--secondaryHover);
+  box-shadow: 10px 15px 20px #3f413e27;
 }
 
 .bullet--text {
@@ -95,7 +98,7 @@ body {
 
 .hero--user {
   display: inline-block;
-  background-color: var(--primary);
+  background-color: var(--secondary);
   padding: 1.5rem;
   min-width: 4rem;
   min-height: 4rem;
@@ -119,11 +122,17 @@ body {
 
 .hero--accent-icon {
   margin-right: 0.5rem;
+  color: var(--accent)
+}
+
+.hero--accent-icon-bg {
+  color: var(--secondary)
 }
 
 footer {
   margin: 2rem auto 0;
   letter-spacing: 2px;
+  color: var(--primary);
 }
 
 a {
@@ -136,13 +145,41 @@ a {
 }
 
 a:hover {
-  color: var(--dark);
+  color: var(--primary);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     color: var(--dark);
     background-color: var(--primary);
+  }
+
+  footer,
+  #logo {
+    color: var(--dark);
+  }
+
+  #content {
+    box-shadow: 15px 15px 30px hsl(100, 2%, 80%);
+    background-color: var(--secondary);
+  }
+
+  .bullet {
+    background-color: var(--primary);
+  }
+
+  .bullet:hover {
+    background-color: var(--primaryHover);
+    box-shadow: 10px 15px 20px hsl(81, 10%, 80%);
+  }
+
+  .hero--user {
+    background-color: var(--primary);
+    ;
+  }
+
+  a:hover {
+    color: var(--dark);
   }
 }
 
@@ -153,7 +190,7 @@ a:hover {
   }
 
   #content {
-    padding: 2rem
+    padding: 2rem;
   }
 
   .bullet {
